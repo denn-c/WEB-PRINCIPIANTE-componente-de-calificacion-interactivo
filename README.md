@@ -35,8 +35,8 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- URL de la solución: [https://github.com/denn-c/WEP-PRINCIPIANTE-component-de-calificacion-interactivo](https://github.com/denn-c/WEP-PRINCIPIANTE-component-de-calificacion-interactivo)
-- URL del sitio en vivo: [https://denn-c.github.io/WEP-PRINCIPIANTE-component-de-calificacion-interactivo/](https://denn-c.github.io/WEP-PRINCIPIANTE-component-de-calificacion-interactivo/)
+- URL de la solución: [https://github.com/denn-c/WEB-PRINCIPIANTE-component-de-calificacion-interactivo](https://github.com/denn-c/WEB-PRINCIPIANTE-component-de-calificacion-interactivo)
+- URL del sitio en vivo: [https://denn-c.github.io/WEB-PRINCIPIANTE-component-de-calificacion-interactivo/](https://denn-c.github.io/WEB-PRINCIPIANTE-component-de-calificacion-interactivo/)
 
 ## Mi proceso
 
