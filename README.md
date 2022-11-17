@@ -1,6 +1,6 @@
-# ----------------------------------------------------------------
+# Componente de calificación interactivo
 
-Esta es una solución al [desafío del ---------------------------------------------------- en Frontend Mentor](-------------------------------------------------------).
+Esta es una solución al [desafío del componente de calificación interactivo en Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
 ## Tabla de contenido
 
@@ -28,14 +28,15 @@ Los usuarios deben ser capaces de:
 
 ### Captura de pantalla
 
-![Vista previa del diseño para el desafío de codificación del ----------------------------](./asset/images/vista-previa.png)
+![Vista previa del diseño para el desafío de codificación del componente de calificación interactivo](asset/images/vista-previa-1.png)
+![Vista previa del diseño para el desafío de codificación del componente de calificación interactivo](asset/images/vista-previa-2.png)
 
 
 
 ### Enlaces
 
-- URL de la solución: [--------------------------------------------------------](--------------------------------------------------)
-- URL del sitio en vivo: [----------------------------------------------](--------------------------------------------------)
+- URL de la solución: [https://github.com/denn-c/WEP-PRINCIPIANTE-component-de-calificacion-interactivo](https://github.com/denn-c/WEP-PRINCIPIANTE-component-de-calificacion-interactivo)
+- URL del sitio en vivo: [https://denn-c.github.io/WEP-PRINCIPIANTE-component-de-calificacion-interactivo/](https://denn-c.github.io/WEP-PRINCIPIANTE-component-de-calificacion-interactivo/)
 
 ## Mi proceso
 
@@ -54,11 +55,50 @@ Fragmentos de código con mayor relevancia en este proyecto.
 **HTML**
 
 ```html
------------------------------------------------
+<div class="rating__scores">
+        <input value="1" class="rating__radio" type="radio" name="score" id="uno">
+        <label for="uno" class="rating__score">1</label>
+        <input value="2" class="rating__radio" type="radio" name="score" id="dos">
+        <label for="dos" class="rating__score">2</label>
+        <input value="3" class="rating__radio" type="radio" name="score" id="tres">
+        <label for="tres" class="rating__score">3</label>
+        <input value="4" class="rating__radio" type="radio" name="score" id="cuatro">
+        <label for="cuatro" class="rating__score">4</label>
+        <input value="5" class="rating__radio" type="radio" name="score" id="cinco">
+        <label for="cinco" class="rating__score">5</label>
+      </div>
 ```
 **CSS**
 ```css
---------------------------------------------------
+.rating__score{
+  margin-top: 1em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Medium-Grey);
+  border-radius: 100%;
+  color: var(--Light-Grey);
+  cursor: pointer;
+  transition: all .2s;
+}
+```
+**JS**
+```js
+$button.addEventListener('click', e => {
+    $radio.forEach(element => {
+        if (element.checked) {
+            $main.classList.add('main--active')
+            $score.textContent = element.value
+        } else {
+            element.nextElementSibling.classList.add('rating__score--active')
+            setTimeout(() => {
+                element.nextElementSibling.classList.remove('rating__score--active')
+            }, 500);
+        }
+    })
+})
 ```
 ### Desarrollo continuo
 

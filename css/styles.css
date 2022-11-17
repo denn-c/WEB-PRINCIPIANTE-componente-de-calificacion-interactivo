@@ -60,7 +60,6 @@ body{
 }
 .rating__radio{
   display: none;
-  -webkit-appearance: none;
 }
 .rating__score{
   margin-top: 1em;
