@@ -1,0 +1,127 @@
+:root{
+  /* Primary */
+--Orange: hsl(25, 97%, 53%);
+/* Neutral */
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(217, 18%, 23%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+@font-face {
+  font-family: "Overpass Regular";
+  src: url(../asset/fonts/Overpass-Regular.ttf);
+}
+@font-face {
+  font-family: "Overpass Bold";
+  src: url(../asset/fonts/Overpass-Bold.ttf);
+}
+*{
+  font-family: 'Overpass Regular';
+  color: var(--White);
+}
+body{
+  background-color: var(--Very-Dark-Blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  background-color: var(--Dark-Blue);
+  max-width: 24em;
+  margin: 1em;
+  border-radius: 1.5em;
+}
+.rating,
+.gratitude{
+  min-height: 24em;
+  padding: 2em;
+}
+.rating__star{
+  background-color: var(--Medium-Grey);
+  padding: 1em;
+  border-radius: 100%;
+}
+.rating__title,
+.gratitude__title{
+  font-size: 2em;
+}
+.rating__text,
+.gratitude__text{
+  font-size: .9em;
+  color: var(--Light-Grey);
+}
+.rating__scores{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .2em;
+}
+.rating__radio{
+  display: none;
+  -webkit-appearance: none;
+}
+.rating__score{
+  margin-top: 1em;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Medium-Grey);
+  border-radius: 100%;
+  color: var(--Light-Grey);
+  cursor: pointer;
+  transition: all .2s;
+}
+.rating__score:hover,
+.rating__score--active{
+  background-color: var(--Light-Grey);
+  font-family: 'Overpass bold';
+  color: var(--White);
+}
+.rating__radio:checked + .rating__score{
+  background-color: var(--Orange);
+  color: var(--White);
+  font-family: 'Overpass bold';
+}
+.rating__submit{
+  margin-top: 2em;
+  height: 3em;
+  width: 100%;
+  background-color: var(--Orange);
+  border: none;
+  border-radius: 2em;
+  text-transform: uppercase;
+  font-family: 'Overpass bold';
+  letter-spacing: .2em;
+  cursor: pointer;
+  transition: background-color,color .5s;
+}
+.rating__submit:hover{
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.gratitude{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.gratitude__qualification{
+  padding: 0.3em 0.8em;
+  margin-top: 2em;
+  border-radius: 1em;
+  background-color: var(--Medium-Grey);
+  color: var(--Orange);
+}
+.gratitude__score{
+  color: var(--Orange);
+}
+.main--active .rating{
+  display: none;
+}
+.main--active .gratitude{
+  display: flex;
+}

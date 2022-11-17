@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="asset/icon/favicon-32x32.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Proyecto DENNYS</title>
+</head>
+
+<body>
+  <main class="main">
+    <article class="rating">
+      <img src="asset/icon/icon-star.svg" alt="Icono de estrella" class="rating__star">
+      <h1 class="rating__title">¿Como lo hicimos?</h1>
+      <p class="rating__text">Háganos saber cómo nos fue con su solicitud de soporte. Todos los comentarios son
+        apreciados para ayudarnos a mejorar nuestra oferta!</p>
+      <div class="rating__scores">
+        <input value="1" class="rating__radio" type="radio" name="score" id="uno">
+        <label for="uno" class="rating__score">1</label>
+        <input value="2" class="rating__radio" type="radio" name="score" id="dos">
+        <label for="dos" class="rating__score">2</label>
+        <input value="3" class="rating__radio" type="radio" name="score" id="tres">
+        <label for="tres" class="rating__score">3</label>
+        <input value="4" class="rating__radio" type="radio" name="score" id="cuatro">
+        <label for="cuatro" class="rating__score">4</label>
+        <input value="5" class="rating__radio" type="radio" name="score" id="cinco">
+        <label for="cinco" class="rating__score">5</label>
+      </div>
+      <button type="submit" class="rating__submit" title="hola denn">Enviar</button>
+    </article>
+    <article class="gratitude">
+      <img src="asset/images/illustration-thank-you.svg" alt="ilustración gracias" class="gratitude__image">
+      <p class="gratitude__qualification">
+        Seleccionaste <span class="gratitude__score">4</span> de 5
+      </p>
+      <h2 class="gratitude__title">¡Gracias!</h2>
+      <p class="gratitude__text">Agradecemos que se tome el tiempo para calificar. Si alguna vez necesita más apoyo, ¡no
+        dude en ponerse en contacto!</p>
+    </article>
+  </main>
+  <script src="js/qualification.js"></script>
+</body>
+
+</html>
