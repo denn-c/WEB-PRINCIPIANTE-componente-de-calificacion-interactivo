@@ -30,7 +30,7 @@ body{
 .main{
   background-color: var(--Dark-Blue);
   max-width: 24em;
-  margin: 1em;
+  margin: .3em;
   border-radius: 1.5em;
 }
 .rating,
